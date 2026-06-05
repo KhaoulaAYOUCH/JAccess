@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">JAccess Mark</title>
+  <desc id="desc">Dark blue JAccess governance mark with cyan glow and central J.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="42%" r="52%">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.95" />
+      <stop offset="0.38" stop-color="#0ea5e9" stop-opacity="0.62" />
+      <stop offset="1" stop-color="#020617" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="edge" x1="92" x2="420" y1="92" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071a36" />
+      <stop offset="0.5" stop-color="#0b4f9e" />
+      <stop offset="1" stop-color="#03142b" />
+    </linearGradient>
+    <linearGradient id="cyan" x1="118" x2="414" y1="122" y2="324" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38e8ff" />
+      <stop offset="0.45" stop-color="#0ea5e9" />
+      <stop offset="1" stop-color="#0759c8" />
+    </linearGradient>
+    <filter id="softGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="none" />
+  <circle cx="256" cy="222" r="205" fill="url(#glow)" opacity="0.75" />
+
+  <g filter="url(#softGlow)">
+    <path d="M256 70 116 119v68h34v-42l106-36 106 36v42h34v-68L256 70Z" fill="url(#cyan)" opacity="0.92" />
+    <path d="M112 194h72v27h-72zM328 194h72v27h-72z" fill="#071a36" stroke="#0ea5e9" stroke-width="2" />
+    <path d="M118 242v111c0 22 11 42 29 54l109 72 109-72c18-12 29-32 29-54V242h-35v103c0 11-6 22-15 28l-88 58-88-58c-9-6-15-17-15-28V242h-35Z" fill="url(#edge)" stroke="#0ea5e9" stroke-width="3" />
+    <path d="M168 239v102c0 12 6 23 16 30l50 33-27-51v-88l-39-26ZM344 239v102c0 12-6 23-16 30l-50 33 27-51v-88l39-26Z" fill="#05224a" stroke="#0ea5e9" stroke-width="2" />
+    <path d="M190 270v81l17-10v-73l-17-8ZM218 282v55l18-11v-47l-18-9ZM322 270v81l-17-10v-73l17-8ZM294 282v55l-18-11v-47l18-9Z" fill="#38e8ff" />
+    <path d="M225 132h82v38h-29v152c0 54-35 91-88 91-39 0-68-20-82-55l42-18c8 20 21 30 40 30 22 0 36-17 36-43V202h-51v-37h50v-33Z" fill="#03142b" stroke="#0a1024" stroke-width="8" stroke-linejoin="round" />
+    <path d="M225 132h82v38h-29v152c0 54-35 91-88 91-39 0-68-20-82-55l42-18c8 20 21 30 40 30 22 0 36-17 36-43V202h-51v-37h50v-33Z" fill="#082b63" stroke="#041126" stroke-width="3" stroke-linejoin="round" />
+    <path d="M216 355 254 424l86-78h-51l-44 39-17-32-12 2Z" fill="url(#cyan)" />
+  </g>
+</svg>
